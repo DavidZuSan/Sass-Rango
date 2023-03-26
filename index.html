@@ -1,83 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rangos</title>
 
     <link rel="stylesheet" href="css/custom.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <div class="text-center my-5">
-                <h1 class="fw-bold mb-3">Precios Basados en el Tráfico</h1>
-                <p class="small text-muted">
-                    Suscríbase a nuestra prueba de 30 días. No necesita tarjeta de
-                    crédito
-                </p>
-            </div>
+      <div class="container">
+        <div class="text-center my-5">
+          <h1 class="fw-bold mb-3">Precios Basados en el Tráfico</h1>
+          <p class="small text-muted">
+            Suscríbase a nuestra prueba de 30 días. No necesita tarjeta de
+            crédito
+          </p>
         </div>
+      </div>
     </header>
 
     <main>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-                <div class="card bg-dark text-light border-0 shadow">
-                    <div class="card-body">
-                        <div class="row text-center align-items-center my-3">
-
-                            <div class="col-12 col-md-6 order-1">
-                                <p class="m-0 h2 fw-bold">
-                                    <span>24</span>
-                                    .00 €
-                                    <span class="text-muted h6 align-middle">/ month</span>
-                                </p>
-                            </div>
-
-                            <div class="col-12 col-md-6 order-3 order-md-2">
-                                <p class="m-0">
-                                    <span class="text-primary">100K</span>
-                                    PÁGINAS VISUALIZADAS
-                                </p>
-                            </div>
-
-                            <div class="col-12 order-2 order-md-3 my-3">
-                                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3" />
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-12">
-                            <ul class="list-unstyled">
-                                <li>
-                                    <i class="bi bi-stars"></i>
-                                    Sitios Webs Ilimitados
-                                </li>
-
-                                <li>
-                                    <i class="bi bi-stars"></i>
-                                    100% Datos Actualizados
-                                </li>
-
-                                <li>
-                                    <i class="bi bi-stars"></i>
-                                    Informe por Correo Electrónico
-                                </li>
-                            </ul>
-                            </div>
-                        </div>
-
-                    </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="card bg-dark text-light border-0 shadow">
+            <div class="card-body">
+              <div class="row text-center align-items-center my-3">
+                <div class="col-12 col-md-6 order-1">
+                  <p class="m-0 h2 fw-bold">
+                    <span id="precio">16</span>
+                    .00 €
+                    <span class="text-muted h6 align-middle">/ month</span>
+                  </p>
                 </div>
-            </div>
-        </div>
-    </main>
-</body>
 
+                <div class="col-12 col-md-6 order-3 order-md-2">
+                  <p class="m-0">
+                    <span class="text-primary" id="visitas">50K</span>
+                    PÁGINAS VISUALIZADAS
+                  </p>
+                </div>
+
+                <div class="col-12 order-2 order-md-3 my-3">
+                  <input
+                    type="range"
+                    class="form-range"
+                    min="8"
+                    max="40"
+                    step="8"
+                    id="inputRango"
+                    value="16"
+                  />
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="row text-center">
+                <div class="col-12">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="bi bi-stars text-primary"></i>
+                      Sitios Webs Ilimitados
+                    </li>
+
+                    <li>
+                      <i class="bi bi-stars text-primary"></i>
+                      100% Datos Actualizados
+                    </li>
+
+                    <li>
+                      <i class="bi bi-stars text-primary"></i>
+                      Informe por Correo Electrónico
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn btn-outline-primary">Acceder</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>
